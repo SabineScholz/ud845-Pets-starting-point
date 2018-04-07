@@ -169,7 +169,7 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
         Log.d(LOG_TAG, "onLoadFinished");
-        // Update the adapter with this cursor containing update pet data
+        // Update the adapter with this cursor containing updated pet data
         // This moves the query results in the adapter, which in turn
         // causes the listview to ask the adapter for fresh views
         petAdapter.changeCursor(cursor);
